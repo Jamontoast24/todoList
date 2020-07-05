@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Todo list</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+   rel="stylesheet">
+    
+   <script src="https://kit.fontawesome.com/1b88a131a4.js"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+        <nav class="navbar">
+            <ul>
+                <li class="title">My Todo List</li>
+            </ul>
+        </nav>
+        <div class="container">
+        <form class="todo-form" onsubmit="return false">
+            <input type="text" class="todo-text" placeholder="Add item">
+            <button id="addtodo">add</button>
+        </form>
+        
+        <div class="inner">
+        <ul id="todoList">
+            <!-- <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i> -->
+        </ul>
+        <h1 class="errText"></h1>
+        </div>
+    </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

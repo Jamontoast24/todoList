@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: rgb(94, 175, 250); 
+	color: #000;
+	font-size: 15px;
+    /* line-height: 1.5; */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 76, 175);
+    height: 80px;
+    border-bottom: 1px solid black;
+    -webkit-box-shadow:0px 1px 1px #000000;
+    -moz-box-shadow:0px 1px 1px #000000;
+    box-shadow:0px 5px 6px #0d1529;
+    z-index: 1;
+}
+
+.navbar .title {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 600px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    line-height:40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 28px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+input[type=text], select {
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#addtodo {
+    background-color: rgb(25, 165, 230);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#addtodo:focus {
+    outline: none;
+}
+
+.inner {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow:0px 5px 6px #0d1529;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#todoList {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#todoList li {
+    background: #1181fa;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    font-weight: bold;
+    color: white;
+}
+
+#todoList button {
+    background-color: rgb(197, 40, 40);
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todoList #completed {
+    background-color: rgb(32, 139, 32);
+}
+
+#todoList button:focus {
+    outline: none;
+}
